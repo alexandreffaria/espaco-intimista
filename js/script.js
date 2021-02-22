@@ -256,8 +256,8 @@ function initializeMap() {
 
         ],
 
-        lat = 39.148352,
-        lng = -84.443999,
+        lat = -19.970194,
+        lng = -43.960914,
 
 
 
@@ -268,7 +268,7 @@ function initializeMap() {
 
 
         mapOptions = {
-            zoom: 14,
+            zoom: 16,
             scrollwheel: false,
             disableDefaultUI: true,
             draggable: true,
