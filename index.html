@@ -56,7 +56,7 @@
                      <h2>Intimista</h2>
                   </a>
                </div>
-               <!-- <div class="right-part">
+               <div class="right-part">
                   <nav class="main-nav">
                      <div class="toggle-mobile-but">
                         <a href="#" class="mobile-but" >
@@ -65,15 +65,15 @@
                      </div>
                      <ul>
                         <li><a class="scroll" href="#wrapper">Home</a></li>
-                        <li><a class="scroll" href="#resto">Resto</a></li>
-                        <li><a class="scroll" href="#menu">Menu</a></li>
-                        <li><a class="scroll" href="#special">Special</a></li>
-                        <li><a class="scroll" href="#reservation">Reservation</a></li>
-                        <li><a class="scroll" href="#gallery">Gallery</a></li>
-                        <li><a class="scroll" href="#contact">Contact</a></li>
+                        <li><a class="scroll" href="#resto">Espaço</a></li>
+                        <!-- <li><a class="scroll" href="#menu">Menu</a></li> -->
+                        <!-- <li><a class="scroll" href="#special">Special</a></li> -->
+                        <!-- <li><a class="scroll" href="#reservation">Reservation</a></li> -->
+                        <!-- <li><a class="scroll" href="#gallery">Gallery</a></li> -->
+                        <li><a class="scroll" href="#contact">Contato</a></li>
                      </ul>
                   </nav>
-               </div> -->
+               </div>
             </header>
             <!--End header-->
             <!--Inner hero-->
@@ -95,6 +95,177 @@
             <!--End inner hero-->
          </section>
          <!--End hero section-->
+         <!--Resto section-->
+         <section id="resto" class="resto pt-120 pb-120">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-12 text-center mb-100">
+                     <h1 class="title">O Espaço</h1>
+                     <p class="beige">Bem vindo ao <em>Intimista Gourmet</em></p>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row vertical-align">
+                  <div class="col-md-5 col-sm-5 ">
+                     <div class="block-img mb-10">
+                        <div class="background-img">
+                           <img src="img/faxada-1.jpg" alt="">
+                        </div>
+                     </div>
+                     <div class="block-img ">
+                        <div class="background-img">
+                           <img src="img/cozinha-mineira-3.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1  ">
+                     <div class="block-content">
+                        <h2 class="title-medium mb-10 pb-10">
+                           Seja bem vindo ao Intimista Gourmet, um espaço inspirado pelas inúmeras experiências inesquecíveis que uma cozinha proporciona.
+                           <span class="dots"></span> 
+                        </h2>
+                        <h4 class="title-small">Do seu jeito, com o conforto que você merece.</h4>
+                        <p class="puch-right mb-40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book galley of type and scrambled .</p>
+                        <img class="sing" src="img/signature.png" alt="">
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End resto section-->
+         <!--Short reservation section-->
+         <section class="short-reservation pt-200 pb-250 overlay">
+            <div class="background-img zoom escurece" >
+               <img src="img/faxada-2.jpg" alt="">
+            </div>
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-12 text-center front-p">
+                     <h1 class="large">Reserve uma data</h1>
+                     <p class="lead white top">Garanta um dia para o seu evento especial </p>
+                     <a href="#reservation" class="but scroll">Agende</a>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End short reservation section-->
+         <!--Reservation section-->
+         <section id="reservation" class="reservation pt-140 pb-140 bg-grey">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 text-center mb-100">
+                     <h1 class="title">Reserva</h1>
+                     <p class="beige">Agende uma data</p>
+                     <p class="title-lead  mt-20">Por favor selecione qual cozinha você tem interesse <br>e o número de pessoas esperadas no evento.
+                     </p>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                     <div class="block-form">
+                        <form class="reservation-form " method="post" action="send.php">
+                           <div class="block-input ico-input">
+                              <i class="icon-user-1"></i>
+                              <label>Nome:</label>
+                              <input  id="name" name="nome" type="text" required>
+                           </div>
+                           <div class="block-input ico-input">
+                              <i class="icon-phone"></i>
+                              <label>Telefone:</label>
+                              <input  id="phone" name="telefone" type="text">
+                           </div>
+                           <div class="block-input ico-input">
+                              <i class="icon-mail-1"></i>
+                              <label>Email:</label>
+                              <input  id="email" name="email" type="text">
+                           </div>
+                           <!--Input columns-->
+                           <div class="input-columns block-input clearfix">
+                              <div class="column-1">
+                                 <div class="column-inner">
+                                    <label>Número de pessoas :  </label>
+                                    <input   id="person" min="1" name="npessoas"  type="number" required>
+                                 </div>
+                              </div>
+                              <!--Column-->
+                              <div class="column-2">
+                                 <div class="column-inner">
+                                    <label>Cozinha:</label>
+                                    <input   id="table" name="cozinha" list="cozinha" type="text" required>
+                                    <datalist id="cozinha"> 
+                                       <option value="Mineira">
+                                       <option value="Moderna">
+                                    </datalist>
+                                 </div>
+                              </div>
+                              <!--End column-->
+                           </div>
+                           <!--End input columns-->
+                           <!--Input columns-->
+                           <div class="input-columns block-input clearfix">
+                              <div class="column-1">
+                                 <div class="column-inner ico-input">
+                                    <i class="icon-calendar"></i>
+                                    <label>Data :  </label>
+                                    <input  class="date" id="date" name="data" type="date" required>
+                                 </div>
+                              </div>
+                              <!--Column-->
+                              <div class="column-2">
+                                 <div class="column-inner ico-input">
+                                    <i class="icon-clock"></i>
+                                    <label>Hora:</label>
+                                    <input   placeholder="(ex: 7:00 pm)"  id="time" name="hora" type="text" required>
+                                 </div>
+                              </div>
+                              <!--End column-->
+                           </div>
+                           <!--End input columns-->
+                           <button  class=" but submit" type="submit">Agendar data</button>
+
+							 <!--Contact form message-->
+                               <div class="success-msg">
+                                  <h2>Your message has been sent. Thank you!</h2>
+                               </div>
+                               <div class="error-msg">
+                                  <h2>Sorry your message can not be sent.</h2>
+                               </div>
+                               <!--End contact form message-->
+
+						
+                        </form>
+                
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End reservation section-->
+
+
          <!--Contact section-->
          <section id="contact" class="contact pt-250 pb-250">
             <!-- As a general rule, include a heading (h1-h6) as a child of each section and article element for screen readers purposes-->
@@ -104,6 +275,7 @@
             </div>
          </section>
          <!--End contact section-->
+         
       </div>
       <!-- End wrapper-->
       <!--Javascript-->	
