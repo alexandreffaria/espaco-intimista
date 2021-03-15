@@ -212,6 +212,12 @@ section.hero .inner-hero {
     filter: brightness(20%);
 }
 
+#bg-preto{
+    background-color: rgba(0, 0, 0, .77);
+    padding: 2em;
+    border-radius: 1em;
+}
+
 .header .left-part {
     float: left;
     margin-left: 50px;
