@@ -212,7 +212,7 @@ p.lead,
 }
 .block-cat h2,
 h1.large {
-    font-family: 'Kristi', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Amsterdam', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 .main-nav li,
 .but {
@@ -693,3 +693,7 @@ input[type="submit"] textarea,
     padding: 0 !important;
 }
 /*End misc */
+
+h2.mb-30{
+    font-size: 9em;
+}
