@@ -21,7 +21,7 @@
                 "Data: $data.\n".
                 "Hora: $hora.\n";
 
-  $to = "contato@espacointimista.com.br";
+  $to = "contato@intimistagourmet.com.br";
 
   $headers = "From: $email_from \r\n";
 
