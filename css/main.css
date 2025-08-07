@@ -393,6 +393,16 @@ h1.large {
     font-size: 15px;
     margin-top: 10px;
 }
+
+/* Kitchen tab images */
+.kitchen-tab-image {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-left: calc(-50vw + 50%);
+}
+
 /* End menu section*/
 /* Review section*/
 
@@ -618,10 +628,10 @@ input.error {
     height: 42px;
     width: 42px;
     border-radius: 50%;
-    -webkit-border-radius: : 50%;
-    -moz-border-radius: : 50%;
-    -ms-border-radius: : 50%;
-    -o-border-radius: : 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     line-height: 40px;
 }
 .block-social a:hover {
