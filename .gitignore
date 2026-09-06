@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+
+# working files, não vão para o site
+ref docs/
+revamp images/
