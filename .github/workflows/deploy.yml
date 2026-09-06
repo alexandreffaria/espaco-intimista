@@ -15,6 +15,37 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # temporario: valida o formato dos secrets sem revelar o conteudo
+      - name: Diagnostico dos secrets
+        env:
+          S: ${{ secrets.FTP_SERVER }}
+          U: ${{ secrets.FTP_USERNAME }}
+          P: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          echo "===== FTP_SERVER ====="
+          if [ -z "$S" ]; then echo "VAZIO - secret nao existe"; else echo "comprimento: ${#S}"; fi
+          case "$S" in *"://"*) echo "PROBLEMA: contem '://'";; *) echo "ok: sem esquema";; esac
+          case "$S" in " "*|*" ") echo "PROBLEMA: espaco no inicio ou fim";; esac
+          case "$S" in *" "*) echo "PROBLEMA: espaco no meio";; esac
+          case "$S" in *"/"*) echo "PROBLEMA: contem barra";; esac
+          case "$S" in *"@"*) echo "PROBLEMA: contem arroba";; esac
+          printf '%s' "$S" | grep -q '[A-Z]' && echo "aviso: tem maiuscula" || echo "ok: tudo minusculo"
+          printf '%s' "$S" | grep -q $'\r' && echo "PROBLEMA: carriage return" || true
+          if getent hosts "$S" >/dev/null 2>&1; then
+            echo "DNS: RESOLVE -> $(getent hosts "$S" | awk '{print $1}' | head -1)"
+          else
+            echo "DNS: NAO RESOLVE  <-- causa do ENOTFOUND"
+          fi
+
+          echo "===== FTP_USERNAME ====="
+          if [ -z "$U" ]; then echo "VAZIO"; else echo "comprimento: ${#U}"; fi
+          case "$U" in *"@"*) echo "ok: tem arroba";; *) echo "aviso: sem arroba";; esac
+          case "$U" in " "*|*" ") echo "PROBLEMA: espaco no inicio ou fim";; esac
+
+          echo "===== FTP_PASSWORD ====="
+          if [ -z "$P" ]; then echo "VAZIO - secret nao existe"; else echo "definido"; fi
+          case "$P" in " "*|*" ") echo "PROBLEMA: espaco no inicio ou fim";; *) echo "ok: sem espaco na borda";; esac
+
       - name: Publicar via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
