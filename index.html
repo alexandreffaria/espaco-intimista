@@ -1,567 +1,715 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <!-- Metas -->
-      <meta charset="utf-8">
-      <title>Intimista Gourmet</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Css -->
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/flexslider.css" rel="stylesheet" type="text/css"  media="all" />
-      <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
-	   <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet">
-	   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	   <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet"> 
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-	</head>
-   <body>
-      <!-- Preloader -->
-      <div class="loader">
-         <!-- Preloader inner -->
-         <div class="loader-inner">
-            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
-               <circle class="spinner" cx="50" cy="50" r="21" fill="#ffffff" stroke-width="2"/>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Intimista — espaço para treinamentos, confrarias e celebrações em Belo
+      Horizonte
+    </title>
+    <meta
+      name="description"
+      content="Um espaço onde a natureza serve de cenário para a inspiração. Quatro ambientes em Belo Horizonte para treinamentos, reuniões, cursos, confrarias, gravações e confraternizações — até 80 pessoas."
+    />
+    <meta name="theme-color" content="#171110" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Intimista — a natureza como cenário para a inspiração"
+    />
+    <meta
+      property="og:description"
+      content="Quatro ambientes em Belo Horizonte para treinamentos, reuniões, cursos, confrarias e celebrações. Até 80 pessoas."
+    />
+    <meta property="og:image" content="media/garden-wide.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=DM+Mono:wght@300;400&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="header" id="header">
+      <a class="brand" href="#topo" aria-label="Intimista, início">
+        <span class="brand__word">Intimista</span>
+      </a>
+
+      <button
+        class="burger"
+        id="burger"
+        aria-expanded="false"
+        aria-controls="nav"
+        aria-label="Abrir menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#espaco">O espaço</a>
+        <a class="nav__link" href="#ambientes">Ambientes</a>
+        <a class="nav__link" href="#vivencias">Formatos</a>
+        <a class="nav__link" href="#dia">Um dia aqui</a>
+        <a class="nav__link" href="#contato">Contato</a>
+        <a class="but but--ghost" href="#reserva">Agendar visita</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <!-- ============ HERO — the panel wall is the front door ============ -->
+      <section class="hero" id="topo">
+        <div class="hero__bg">
+          <img
+            src="media/panel-night.jpg"
+            alt="Painel de aço vazado com o símbolo do Intimista, iluminado por trás à noite"
+            fetchpriority="high"
+            width="1920"
+            height="1280"
+          />
+        </div>
+        <div class="hero__veil"></div>
+
+        <div class="wrap hero__inner">
+          <p class="hero__word rise d1">Intimista</p>
+          <h1 class="h-xl rise d2">
+            A natureza como cenário para a inspiração.
+          </h1>
+          <p class="lead hero__sub rise d3">
+            Um espaço em Belo Horizonte para treinamentos, encontros e
+            celebrações que o seu grupo leva embora.
+          </p>
+
+          <div class="hero__actions rise d4">
+            <a class="but but--primary" href="#reserva">Agendar uma visita</a>
+            <a class="but but--ghost" href="#ambientes">Ver os ambientes</a>
+          </div>
+
+          <ul class="specstrip rise d5">
+            <li>Belo Horizonte, MG</li>
+            <li>Desde 2021</li>
+            <li>Quatro ambientes</li>
+            <li>Até 80 pessoas</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ the door opens ============ -->
+      <div class="reveal-shot">
+        <img
+          src="media/garden-wide.jpg"
+          alt="Jardim do Intimista com pergolado tomado por buganvílias floridas e caminho de pedra"
+          loading="lazy"
+          width="1600"
+          height="739"
+        />
+      </div>
+
+      <!-- ============ MANIFESTO ============ -->
+      <section class="band band--sage" id="espaco">
+        <div class="wrap">
+          <p class="eyebrow reveal">O espaço</p>
+          <h2 class="h-lg reveal" style="--d: 0.08s">
+            Tudo fica mais leve quando acontece em um lugar que favorece o
+            sorriso.
+          </h2>
+
+          <div class="manifesto__cols prose">
+            <div class="reveal" style="--d: 0.16s">
+              <p>
+                Treinamento pela manhã, confraria à noite, curso no sábado. O
+                espaço troca de papel sem trocar de endereço — e é sempre a
+                mesma coisa que faz funcionar: gente reunida em volta de uma
+                mesa, longe da sala de sempre.
+              </p>
+            </div>
+            <div class="reveal" style="--d: 0.24s">
+              <p>
+                O que muda é a montagem. As mesas em U para a apresentação da
+                manhã, a mesa corrida posta na hora do almoço, o deck aceso para
+                o brinde no fim da noite. A estrutura é sempre a mesma — e ela
+                se ajusta ao que você veio fazer aqui.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ AMBIENTES ============ -->
+      <section class="band band--dark" id="ambientes">
+        <div class="wrap">
+          <p class="eyebrow reveal">Os ambientes</p>
+          <h2 class="h-lg reveal" style="--d: 0.08s">
+            Quatro ambientes, um dia inteiro.
+          </h2>
+          <p class="lead reveal" style="--d: 0.16s; margin-top: 1.5rem">
+            Use um só ou percorra todos: a manhã na sala, o almoço na cozinha, a
+            tarde debaixo da buganvília.
+          </p>
+
+          <div class="rooms">
+            <article class="room reveal">
+              <div class="room__shot">
+                <img
+                  src="media/room-modern.jpg"
+                  alt="Sala da Cozinha Moderna com mesas em U, televisão, quadro branco e cozinha ao fundo"
+                  loading="lazy"
+                  width="1280"
+                  height="591"
+                />
+              </div>
+              <div>
+                <h3 class="h-md room__name">Cozinha Moderna</h3>
+                <p class="room__note">
+                  Mesas em U, ar-condicionado e cozinha completa ao fundo.
+                  Formato de sala de treinamento, sem cara de sala de
+                  treinamento.
+                </p>
+                <ul class="room__specs">
+                  <li>Lotação <b>30 pessoas</b></li>
+                  <li>Forno <b>a gás e elétrico</b></li>
+                  <li>Fogão <b>profissional</b></li>
+                  <li>Smart TV <b>50"</b></li>
+                  <li>Café <b>Máquina de cápsula</b></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="room reveal">
+              <div class="room__shot">
+                <img
+                  src="media/room-rustic.jpg"
+                  alt="Cozinha Mineira com mesa corrida de madeira maciça, coifa e janelas abertas para o jardim"
+                  loading="lazy"
+                  width="1800"
+                  height="840"
+                />
+              </div>
+              <div>
+                <h3 class="h-md room__name">Cozinha Mineira</h3>
+                <p class="room__note">
+                  Mesa corrida de madeira maciça e a porta aberta para o jardim.
+                  É onde a equipe senta junta e a conversa muda de tom.
+                </p>
+                <ul class="room__specs">
+                  <li>Lotação <b>30 pessoas</b></li>
+                  <li>Forno <b>A lenha</b></li>
+                  <li>Fogão <b>profissional</b></li>
+                  <li>Smart TV <b>50"</b></li>
+                  <li>Café <b>Coador de pano</b></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="room reveal">
+              <div class="room__shot">
+                <img
+                  src="media/deck-wide.jpg"
+                  alt="Área externa com deck de madeira sob pergolado de eucalipto, mesas e cadeiras de fibra"
+                  loading="lazy"
+                  width="1600"
+                  height="739"
+                />
+              </div>
+              <div>
+                <h3 class="h-md room__name">Área Externa</h3>
+                <p class="room__note">
+                  Deck de madeira sob o pergolado, coberto e ventilado. Cabe o
+                  time inteiro — e o churrasco no fim do dia.
+                </p>
+                <ul class="room__specs">
+                  <li>Lotação <b>80 pessoas</b></li>
+                  <li>Churrasqueira <b>profissional</b></li>
+                  <li>Fogão <b>industrial</b></li>
+                  <li>Som <b>ambiente</b></li>
+                  <li>Cobertura <b>pergolado</b></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="room reveal">
+              <div class="room__shot">
+                <img
+                  class="crop-high"
+                  src="media/garden-side.jpg"
+                  alt="Buganvília florida sobre o caminho de pedra que leva ao estar do jardim"
+                  loading="lazy"
+                  width="1000"
+                  height="2165"
+                />
+              </div>
+              <div>
+                <h3 class="h-md room__name">Jardim</h3>
+                <p class="room__note">
+                  Buganvília, piso de pedra e grama. O lugar do café da tarde,
+                  da dinâmica em roda ou de simplesmente respirar entre uma
+                  pauta e outra.
+                </p>
+                <ul class="room__specs">
+                  <li>Formato <b>ao ar livre</b></li>
+                  <li>Estar externo <b>pergolado</b></li>
+                  <li>Iluminação <b>cênica</b></li>
+                  <li>Uso <b>dia e noite</b></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FORMATOS ============ -->
+      <section class="band band--sage" id="vivencias">
+        <div class="wrap">
+          <p class="eyebrow reveal">Formatos</p>
+          <h2 class="h-lg reveal" style="--d: 0.08s">
+            Fazer diferente é a chave.
+          </h2>
+          <p class="lead reveal" style="--d: 0.16s; margin-top: 1.5rem">
+            O mesmo endereço, montado de um jeito diferente para cada tipo de
+            encontro.
+          </p>
+
+          <ul class="viv">
+            <li class="reveal">
+              <div class="viv__row">
+                <span class="viv__name">Treinamento</span>
+                <p class="viv__note">
+                  Mesas em U, projeção e ar-condicionado pela manhã. No
+                  intervalo ninguém fica no corredor: sai para o jardim.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" style="--d: 0.06s">
+              <div class="viv__row">
+                <span class="viv__name">Aula de cozinha</span>
+                <p class="viv__note">
+                  As cozinhas equipadas para uma turma trabalhar junto. Divide
+                  tarefa, erra, ri e senta para comer o que fez.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" style="--d: 0.12s">
+              <div class="viv__row">
+                <span class="viv__name">Curso e imersão</span>
+                <p class="viv__note">
+                  Dia inteiro com turma de inscrição aberta: a sala de manhã, a
+                  mesa corrida no almoço, o deck à tarde.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" style="--d: 0.18s">
+              <div class="viv__row">
+                <span class="viv__name">Confraria</span>
+                <p class="viv__note">
+                  Mesa posta, rótulos abertos e harmonização conduzida. Começa
+                  na cozinha e termina sob o pergolado.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" style="--d: 0.24s">
+              <div class="viv__row">
+                <span class="viv__name">Jantar de marca</span>
+                <p class="viv__note">
+                  Convidados, uma fala curta e um menu preparado e finalizado ao
+                  vivo pelo chef, na frente de quem vai comer.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" style="--d: 0.3s">
+              <div class="viv__row">
+                <span class="viv__name">Gravação e ensaio</span>
+                <p class="viv__note">
+                  Duas cozinhas e um jardim que já servem de cenário fixo para
+                  programa de receitas, foto de produto e conteúdo de marca.
+                </p>
+              </div>
+            </li>
+            <li class="reveal" style="--d: 0.36s">
+              <div class="viv__row">
+                <span class="viv__name">Confraternização</span>
+                <p class="viv__note">
+                  O fim de ano da empresa com cara de casa de campo: deck
+                  aceso, churrasqueira ligada e ninguém com pressa de ir embora.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <p class="viv__more reveal" style="--d: 0.42s">
+            …e muito mais, do jeito que a sua imaginação permitir.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ UM DIA AQUI — o sol atravessa o dia ============ -->
+      <section class="band band--dark arc" id="dia" data-scene="0">
+        <div class="arc__aura" aria-hidden="true"></div>
+
+        <div class="wrap">
+          <p class="eyebrow reveal">Um dia aqui</p>
+          <h2 class="h-lg reveal" style="--d: 0.08s">
+            O sol atravessa o dia com o seu grupo.
+          </h2>
+          <p class="lead reveal" style="--d: 0.16s; margin-top: 1.5rem">
+            Mova o sol pelas horas — ou deixe o dia correr sozinho.
+          </p>
+
+          <div class="arc__stage reveal" style="--d: 0.24s">
+            <article
+              class="arc__slide is-on"
+              id="cena-0"
+              role="tabpanel"
+              aria-labelledby="hora-0"
+              tabindex="0"
+            >
+              <img
+                src="media/garden-wide.jpg"
+                alt="Jardim do Intimista de manhã, com o pergolado de buganvílias e o caminho de pedra"
+                loading="lazy"
+                width="1600"
+                height="740"
+              />
+              <div class="arc__cap">
+                <p class="arc__hour-big">08h</p>
+                <h3 class="h-md">A chegada</h3>
+                <p class="arc__note">
+                  O portão abre para o jardim. Café passado, ninguém sentou
+                  ainda — e já dá para ouvir o primeiro riso.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="arc__slide"
+              id="cena-1"
+              role="tabpanel"
+              aria-labelledby="hora-1"
+              tabindex="0"
+            >
+              <img
+                src="media/room-modern.jpg"
+                alt="Sala da Cozinha Moderna montada em U para o treinamento da manhã"
+                loading="lazy"
+                width="1280"
+                height="592"
+              />
+              <div class="arc__cap">
+                <p class="arc__hour-big">10h</p>
+                <h3 class="h-md">A sala</h3>
+                <p class="arc__note">
+                  Mesas em U, a apresentação no ar. A porta fica aberta: o verde
+                  entra junto com a pauta.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="arc__slide"
+              id="cena-2"
+              role="tabpanel"
+              aria-labelledby="hora-2"
+              tabindex="0"
+            >
+              <img
+                src="media/room-rustic.jpg"
+                alt="Cozinha Mineira com a mesa corrida de madeira posta para o almoço"
+                loading="lazy"
+                width="1800"
+                height="840"
+              />
+              <div class="arc__cap">
+                <p class="arc__hour-big">13h</p>
+                <h3 class="h-md">O almoço</h3>
+                <p class="arc__note">
+                  O grupo cozinha, serve e senta na mesa corrida. É aqui que a
+                  reunião vira conversa.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="arc__slide"
+              id="cena-3"
+              role="tabpanel"
+              aria-labelledby="hora-3"
+              tabindex="0"
+            >
+              <img
+                class="crop-high"
+                src="media/garden-path.jpg"
+                alt="Buganvília florida contra o céu azul sobre o caminho de pedra, à tarde"
+                loading="lazy"
+                width="739"
+                height="1600"
+              />
+              <div class="arc__cap">
+                <p class="arc__hour-big">16h</p>
+                <h3 class="h-md">O café da tarde</h3>
+                <p class="arc__note">
+                  Pausa debaixo da buganvília. Dinâmica em roda — ou só o
+                  silêncio de quem estava precisando de um.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="arc__slide"
+              id="cena-4"
+              role="tabpanel"
+              aria-labelledby="hora-4"
+              tabindex="0"
+            >
+              <img
+                src="media/deck-night.jpg"
+                alt="Deck sob o pergolado com as luminárias acesas ao anoitecer"
+                loading="lazy"
+                width="1280"
+                height="592"
+              />
+              <div class="arc__cap">
+                <p class="arc__hour-big">19h</p>
+                <h3 class="h-md">A noite</h3>
+                <p class="arc__note">
+                  As luzes do pergolado acendem. O dia termina no deck, sem
+                  ninguém com pressa de ir embora.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="arc__sky reveal" style="--d: 0.3s" aria-hidden="true">
+            <svg viewBox="0 0 1000 120" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="arcLit" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#8fb6cf" />
+                  <stop offset=".5" stop-color="#f4d9a4" />
+                  <stop offset="1" stop-color="#f0b569" />
+                </linearGradient>
+              </defs>
+              <path class="arc__rail" d="M0 110 Q500 -40 1000 110" />
+              <path class="arc__lit" d="M0 110 Q500 -40 1000 110" />
             </svg>
-         </div>
-         <!-- End preloader inner -->
-      </div>
-      <!-- End preloader-->
-      <!--Wrapper-->
-      <div class="wrapper">
-         <!--Hero section-->
-         <section class="hero overlay">
-            <!--Main slider-->
-            <div class="main-slider slider flexslider">
-               <ul class="slides">
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/painel-logo.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/externa-1.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/cozinha-mineira-3.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/Cozinha-Moderna(6).jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/externa-2.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/cozinha-mineira-1.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/Cozinha-Moderna(3).jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/cozinha-mineira-4.jpg" alt="">
-                     </div>
-                  </li>
-                  <li>
-                     <div class="background-img zoom">
-                        <img src="img/Cozinha-Moderna(9).jpg" alt="">
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <!--End main slider-->
-            <!--Header-->
-            <header class="header default">
-               <div class=" left-part">
-                  <a class="logo scroll" href="#hero">
-                     <h2>Intimista</h2>
-                  </a>
-               </div>
-               <div class="right-part">
-                  <nav class="main-nav">
-                     <div class="toggle-mobile-but">
-                        <a href="#" class="mobile-but" >
-                           <div class="lines"></div>
-                        </a>
-                     </div>
-                     <ul>
-                        <li><a class="scroll" href="#wrapper">Home</a></li>
-                        <li><a class="scroll" href="#resto">Espaço</a></li>
-                        <!-- <li><a class="scroll" href="#special">Special</a></li> -->
-                        <li><a class="scroll" href="#cozinhas">As cozinhas</a></li>
-                        <li><a class="scroll" href="#reservation">Reserva</a></li>
-                        <!-- <li><a class="scroll" href="#gallery">Gallery</a></li> -->
-                        <li><a class="scroll" href="#contact">Contato</a></li>
-                     </ul>
-                  </nav>
-               </div>
-            </header>
-            <!--End header-->
-            <!--Inner hero-->
-            <div class="inner-hero">
-               <!--Container-->
-               <div class="container hero-content">
-                  <!--Row-->
-                  <div class="row">
-                     <div class="col-sm-12 text-center">
-                        <h1 class="large">o espaço ideal para seus treinamentos</h1>
-                        <p class="lead">Transformando experiências corporativas e sociais desde 2021</p>
-						
-                     </div>
-                  </div>
-                  <!--End row-->
-               </div>
-               <!--End container-->
-            </div>
-            <!--End inner hero-->
-         </section>
-         <!--End hero section-->
-         <!--Resto section-->
-         <section id="resto" class="resto pt-120 pb-120">
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12 text-center mb-100">
-                     <h1 class="title">O Espaço</h1>
-                     <p class="beige">Espaço profissional para <em>treinamentos e reuniões empresariais</em></p>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row vertical-align">
-                  <div class="col-md-5 col-sm-5 ">
-                     <div class="block-img mb-10">
-                        <div class="background-img">
-                           <img src="img/Cozinha-Moderna(6).jpg" alt="Cozinha Moderna">
-                        </div>
-                     </div>
-                     <div class="block-img ">
-                        <div class="background-img">
-                           <img src="img/cozinha-mineira-1.jpg" alt="Cozinha Mineira">
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1  ">
-                     <div class="block-content">
-                        <h2 class="title-medium mb-10 pb-10">
-                           Seja bem vindo ao Intimista Gourmet, um espaço versátil projetado para treinamentos empresariais, reuniões corporativas e experiências gastronômicas inesquecíveis.
-                           <span class="dots"></span>
-                        </h2>
-                        <h4 class="title-small">O ambiente ideal para capacitação profissional e eventos corporativos.</h4>
-                        <p class="puch-right mb-40">Um espaço profissional e aconchegante, perfeito para treinamentos culinários, workshops gastronômicos, reuniões de equipe, cursos especializados, sessões de fotos e gravações. Cada cozinha foi pensada para oferecer versatilidade e conforto para diferentes tipos de eventos. </p>
-                        <p class="puch-right mb-40">Seja para team building, treinamentos técnicos ou reuniões sociais, nosso espaço está equipado com tecnologia moderna e o charme da cozinha tradicional, criando o ambiente perfeito para seus objetivos profissionais. </p>
-                        <img class="sing" src="img/signature.png" alt="">
-                     </div>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-         </section>
-         
-         
-      </div>
-      <!-- End wrapper-->
-         <!--Short reservation section-->
-         <section class="short-reservation pt-200 pb-250 overlay">
-            <div class="background-img zoom escurece" >
-               <img src="img/faxada-2.jpg" alt="">
-            </div>
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12 text-center front-p">
-                     <h1 class="large">Reserve seu treinamento</h1>
-                     <p class="lead white top">Garanta as datas para seus treinamentos empresariais e eventos corporativos </p>
-                     <a href="#reservation" class="but scroll">Agende</a>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-         </section>
-         <section id="cozinhas" class="menu pt-120 pb-120 ">
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12  mb-100 text-center">
-                     <h1 class="title">As Cozinhas</h1>
-                     <p class="beige">Espaços versáteis para treinamentos e eventos corporativos.</p>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12 ">
-                     <!--Tabs-->
-                     <ul class="block-tabs text-center">
-                        <li class="active">Moderna</li>
-                        <li class="">Mineira</li>
-                        <li class="">Externa</li>
-                     </ul>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <ul class="block-tab mt-40">
-                     <!--Menu list-->
-                     <li class="active block-list">
-                        <div class="col-sm-12 text-center mb-40">
-                           <div class="block-img">
-                              <div class="background-img">
-                                 <img src="img/Cozinha-Moderna(6).jpg" alt="Cozinha Moderna" class="kitchen-tab-image">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-5  col-sm-offset-1 text-center">
-                           <div class="block-cat">
-                              <h2 class="mb-30">diferenciais </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Forno a Lenha </h2>
-                              <p>Tem coisas que nem tecnologia consegue substituir.</p>
-                              
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Fogão Profissional </h2>
-                              <p>Fogão e forno profissional pra acelerar seu trabalho.</p>
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Lotação </h2>
-                              <p>30 Pessoas.</p>
-                              
-                           </div>
-                        </div>
-                        <div class="col-sm-5 text-center ">
-                           <div class="block-cat">
-                              <h2 class="mb-30">mimos  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Smart TV 50"</h2>
-                              <p>Para colocar uma trilha sonora, ou seguir uma receita em vídeo.</p> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Coador de pano </h2>
-                              <p>Nada como um cafézinho passado na hora do jeito que vovó fazia.</p>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Tudo que você precisa  </h2>
-                              <p>Pratos, copos, talheres... pra você não precisar trazer nada de casa.</p>
-                           </div>
-                        </div>
-                     </li>
-                     <!--Menu list-->
-                     <li class=" block-list">
-                        <div class="col-sm-12 text-center mb-40">
-                           <div class="block-img">
-                              <div class="background-img">
-                                 <img src="img/cozinha-mineira-1.jpg" alt="Cozinha Mineira" class="kitchen-tab-image">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-5  col-sm-offset-1 text-center">
-                           <div class="block-cat">
-                              <h2 class="mb-30">diferenciais </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Forno Elétrico </h2>
-                              <p>Rápido e preciso, um forno profissional a sua disposição.</p>
-                              
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Fogão Profissional </h2>
-                              <p>Fogão e forno profissional pra acelerar seu trabalho.</p>
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Lotação </h2>
-                              <p>30 Pessoas.</p>
-                              
-                           </div>
-                        </div>
-                        <div class="col-sm-5 text-center ">
-                           <div class="block-cat">
-                              <h2 class="mb-30">mimos  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Smart TV 50"</h2>
-                              <p>Para colocar uma trilha sonora, ou seguir uma receita em vídeo.</p> 
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Café expresso </h2>
-                              <p>Aquele curto saboroso que só vem com um expresso profissional.</p>
-                              <span class="dots"></span> 
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Tudo que você precisa  </h2>
-                              <p>Pratos, copos, talheres... pra você não precisar trazer nada de casa.</p>
-                           </div>
-                        </div>
-                        
-                     </li>
-                     <!--Menu list-->
-                     <li class=" block-list">
-                        <div class="col-sm-12 text-center mb-40">
-                           <div class="block-img">
-                              <div class="background-img">
-                                 <img src="img/externa-1.jpg" alt="Cozinha Externa" class="kitchen-tab-image">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-5  col-sm-offset-1 text-center">
-                           <div class="block-cat">
-                              <h2 class="mb-30">diferenciais </h2>
-                           </div>
-                           <div class="block-content pb-25 mb-25">
-                              <h2 class="mb-5 ">Churrasqueira Profissional </h2>
-                              <p>Churrasqueira grande com grelhas ajustáveis para o churrasco perfeito.</p>
-                              
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Fogão Industrial </h2>
-                              <p>Fogão industrial de alta potência ideal para grandes quantidades.</p>
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Área Coberta </h2>
-                              <p>Espaço totalmente coberto e ventilado para conforto em qualquer clima.</p>
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Lotação </h2>
-                              <p>80 Pessoas.</p>
-                              
-                           </div>
-                        </div>
-                        <div class="col-sm-5 text-center ">
-                           <div class="block-cat">
-                              <h2 class="mb-30">mimos  </h2>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Som Ambiente</h2>
-                              <p>Sistema de som completo para criar a atmosfera perfeita.</p>
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Mesa de Apoio Grande </h2>
-                              <p>Ampla mesa de apoio em inox para preparação e organização.</p>
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content  pb-25 mb-25">
-                              <h2 class="mb-5 ">Iluminação Especial </h2>
-                              <p>Iluminação ambiente ajustável para eventos diurnos e noturnos.</p>
-                              <span class="dots"></span>
-                           </div>
-                           <div class="block-content">
-                              <h2 class="mb-5 ">Utensílios Completos  </h2>
-                              <p>Tudo para churrasco e cozinha externa: espetos, pegadores, pratos...</p>
-                           </div>
-                        </div>
-                        
-                     </li>
-                     <!--Menu list-->
-                     
-                  </ul>
-                  <!--End tabs-->
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-         </section>
-         <!--End short reservation section-->
-         <!--Reservation section-->
-         <section id="reservation" class="reservation pt-140 pb-140 bg-grey">
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-8 col-sm-offset-2 text-center mb-100">
-                     <h1 class="title">Reserva</h1>
-                     <p class="beige">Agende seu treinamento ou evento corporativo</p>
-                     <p class="title-lead  mt-20">Ideal para treinamentos empresariais, reuniões corporativas, cursos, workshops, sessões de fotos e gravações. <br>Selecione o espaço desejado e o número de participantes.
-                     </p>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-sm-8 col-sm-offset-2">
-                     <div class="block-form">
-                        <form class="reservation-form " method="post" action="send.php">
-                           <div class="block-input ico-input">
-                              <i class="icon-user-1"></i>
-                              <label>Nome:</label>
-                              <input  id="name" name="nome" type="text" required>
-                           </div>
-                           <div class="block-input ico-input">
-                              <i class="icon-phone"></i>
-                              <label>Telefone:</label>
-                              <input  id="phone" name="telefone" type="text">
-                           </div>
-                           <div class="block-input ico-input">
-                              <i class="icon-mail-1"></i>
-                              <label>Email:</label>
-                              <input  id="email" name="email" type="text">
-                           </div>
-                           <!--Input columns-->
-                           <div class="input-columns block-input clearfix">
-                              <div class="column-1">
-                                 <div class="column-inner">
-                                    <label>Número de pessoas :  </label>
-                                    <input   id="person" min="1" name="npessoas"  type="number" required>
-                                 </div>
-                              </div>
-                              <!--Column-->
-                              <div class="column-2">
-                                 <div class="column-inner">
-                                    <label>Cozinha:</label>
-                                    <input   id="table" name="cozinha" list="cozinha" type="text" required>
-                                    <datalist id="cozinha">
-                                       <option value="Mineira">
-                                       <option value="Moderna">
-                                       <option value="Externa">
-                                    </datalist>
-                                 </div>
-                              </div>
-                              <!--End column-->
-                           </div>
-                           <!--End input columns-->
-                           <!--Input columns-->
-                           <div class="input-columns block-input clearfix">
-                              <div class="column-1">
-                                 <div class="column-inner ico-input">
-                                    <i class="icon-calendar"></i>
-                                    <label>Data :  </label>
-                                    <input  class="date" id="date" name="data" type="date" required>
-                                 </div>
-                              </div>
-                              <!--Column-->
-                              <div class="column-2">
-                                 <div class="column-inner ico-input">
-                                    <i class="icon-clock"></i>
-                                    <label>Hora:</label>
-                                    <input   placeholder="(ex: 7:00 pm)"  id="time" name="hora" type="text" required>
-                                 </div>
-                              </div>
-                              <!--End column-->
-                           </div>
-                           <!--End input columns-->
-                           <button  class=" but submit" type="submit">Agendar data</button>
+            <span class="arc__sun"></span>
+          </div>
 
-							 <!--Contact form message-->
-                               <div class="success-msg">
-                                  <h2>Sua mensagem foi enviada!</h2>
-                               </div>
-                               <div class="error-msg">
-                                  <h2>Sinto muito mas sua mensagem não foi enviada, por favor entre em contato diretamente pelo email: <a href="mailto:contato@intimistagourmet.com.br">contato@intimistagourmet.com.br</a>.</h2>
-                               </div>
-                               <!--End contact form message-->
+          <div class="arc__hours" role="tablist" aria-label="Horas do dia">
+            <button
+              class="arc__hour is-on"
+              id="hora-0"
+              role="tab"
+              type="button"
+              aria-selected="true"
+              aria-controls="cena-0"
+            >
+              <b>08h</b><span>Chegada</span>
+            </button>
+            <button
+              class="arc__hour"
+              id="hora-1"
+              role="tab"
+              type="button"
+              aria-selected="false"
+              aria-controls="cena-1"
+              tabindex="-1"
+            >
+              <b>10h</b><span>Sala</span>
+            </button>
+            <button
+              class="arc__hour"
+              id="hora-2"
+              role="tab"
+              type="button"
+              aria-selected="false"
+              aria-controls="cena-2"
+              tabindex="-1"
+            >
+              <b>13h</b><span>Almoço</span>
+            </button>
+            <button
+              class="arc__hour"
+              id="hora-3"
+              role="tab"
+              type="button"
+              aria-selected="false"
+              aria-controls="cena-3"
+              tabindex="-1"
+            >
+              <b>16h</b><span>Café</span>
+            </button>
+            <button
+              class="arc__hour"
+              id="hora-4"
+              role="tab"
+              type="button"
+              aria-selected="false"
+              aria-controls="cena-4"
+              tabindex="-1"
+            >
+              <b>19h</b><span>Noite</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-						
-                        </form>
-                
-                     </div>
-                  </div>
-               </div>
-               <!--End row-->
+      <!-- ============ O PASSEIO ============ -->
+      <section class="band band--casca" id="passeio">
+        <div class="wrap tour">
+          <div>
+            <p class="eyebrow reveal">O passeio</p>
+            <h2 class="h-lg reveal" style="--d: 0.08s">
+              Dê uma volta antes de vir.
+            </h2>
+            <p class="lead reveal" style="--d: 0.16s; margin-top: 1.5rem">
+              O espaço inteiro em quarenta segundos: o portão, o jardim, o deck
+              e as cozinhas.
+            </p>
+            <div class="reveal" style="--d: 0.24s; margin-top: 2.25rem">
+              <a
+                class="but but--ghost"
+                href="https://www.instagram.com/intimista_gourmet/"
+                target="_blank"
+                rel="noopener"
+                >Ver mais no Instagram</a
+              >
             </div>
-            <!--End container-->
-         </section>
-         <!--End reservation section-->
+          </div>
 
+          <div class="phone reveal" style="--d: 0.12s">
+            <video
+              src="media/walkthrough.mp4"
+              poster="media/walkthrough-poster.jpg"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-label="Vídeo: passeio pelo jardim, pelo deck e pelas cozinhas do Intimista"
+            ></video>
+          </div>
+        </div>
+      </section>
 
-         <!--Contact section-->
-         <section id="contact" class="contact pt-250 pb-250">
-            <!-- As a general rule, include a heading (h1-h6) as a child of each section and article element for screen readers purposes-->
-            <h2 class="indent">Contact</h2>
-            <div class="block-map ">
-               <div id="map" class="map"></div>
+      <!-- ============ RESERVA ============ -->
+      <section class="band band--sage reserva" id="reserva">
+        <div class="wrap--narrow">
+          <p class="eyebrow reveal">Reserva</p>
+          <h2 class="h-lg reveal" style="--d: 0.08s">
+            Agende sua data.
+          </h2>
+          <p class="lead reveal" style="--d: 0.16s; margin-top: 1.5rem">
+            Escreva para a gente e a conversa já começa com uma pessoa do outro
+            lado. Respondemos em até um dia útil.
+          </p>
+
+          <div class="convite reveal" style="--d: 0.24s">
+            <a
+              class="but but--primary"
+              href="mailto:contato@intimistagourmet.com.br?subject=Agendamento%20de%20visita%20%E2%80%94%20Intimista&amp;body=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita.%0D%0A%0D%0ATipo%20de%20encontro%3A%20%0D%0AAmbiente%3A%20%0D%0AParticipantes%3A%20%0D%0AData%3A%20%0D%0ATelefone%3A%20%0D%0A%0D%0AObrigado!"
+              >Escrever um e-mail</a
+            >
+            <a
+              class="but but--ghost"
+              href="https://www.instagram.com/intimista_gourmet/"
+              target="_blank"
+              rel="noopener"
+              >Chamar no Instagram</a
+            >
+          </div>
+
+          <div class="convite__aside reveal" style="--d: 0.3s">
+            <p class="convite__label">O que contar na mensagem</p>
+            <ul class="convite__lista">
+              <li>Que tipo de encontro</li>
+              <li>Qual ambiente</li>
+              <li>Quantas pessoas</li>
+              <li>Data pretendida</li>
+              <li>Um telefone para retorno</li>
+            </ul>
+            <p class="convite__nota">
+              Preferir copiar o endereço?
+              <a href="mailto:contato@intimistagourmet.com.br"
+                >contato@intimistagourmet.com.br</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTATO ============ -->
+      <section class="band band--dark" id="contato">
+        <div class="wrap">
+          <p class="eyebrow reveal">Contato</p>
+          <h2 class="h-lg reveal" style="--d: 0.08s">Venha nos conhecer.</h2>
+
+          <div class="contact" style="margin-top: clamp(2.5rem, 6vw, 4rem)">
+            <div class="map reveal">
+              <iframe
+                title="Mapa: Av. Eng. Carlos Goulart, 931 — Belo Horizonte, MG"
+                src="https://maps.google.com/maps?q=-19.970194,-43.960914&amp;z=16&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-            <!--Container-->
-            <div class="container block-contact">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7" id="bg-preto">
-                     <ul class="block-social mb-30">
-                        <li><a href="https://www.instagram.com/intimista_gourmet/" target="_blank"><i class="icon-instagram"></i></a></li>
-                        <!-- <li><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#"><i class="icon-vimeo"></i></a></li> -->
-                     </ul>
-                     <div class="block-info mb-30">
-                        <p><strong>Entre em contato</strong><br>
-                           Fale com a gente e tire qualquer dúvida, ou agende um horário para conhecer nossas cozinhas.	
-                           <br><br>
 
-                           Av. Eng. Carlos Goulart, 931 <br>
-                           Belo Horizonte - MG <br>
-                           Email : <span><a href="mailto:contato@intimistagourmet.com.br">contato@intimistagourmet.com.br</a></span>
-                        </p>
-                     </div>
-                     <footer class="footer-short mt-40">
-                        <p>	&copy; 2021 todos os direitos reservados - Intimista Gourmet.</p>
-                     </footer>
-                  </div>
-                  
-               </div>
-               <!--End row-->
+            <div class="reveal" style="--d: 0.1s">
+              <div class="contact__block">
+                <p class="contact__label">Endereço</p>
+                <address>
+                  Av. Eng. Carlos Goulart, 931<br />
+                  Buritis · Belo Horizonte, MG
+                </address>
+                <p style="margin-top: 0.6rem">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&amp;query=-19.970194,-43.960914"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no Google Maps</a
+                  >
+                </p>
+              </div>
+              <div class="contact__block">
+                <p class="contact__label">E-mail</p>
+                <p>
+                  <a href="mailto:contato@intimistagourmet.com.br"
+                    >contato@intimistagourmet.com.br</a
+                  >
+                </p>
+              </div>
+              <div class="contact__block">
+                <p class="contact__label">Instagram</p>
+                <p>
+                  <a
+                    href="https://www.instagram.com/intimista_gourmet/"
+                    target="_blank"
+                    rel="noopener"
+                    >@intimista_gourmet</a
+                  >
+                </p>
+              </div>
+              <div class="contact__block">
+                <p class="contact__label">Visitas</p>
+                <p style="color: var(--luz-fraca)">
+                  Agende um horário para conhecer os ambientes pessoalmente.
+                </p>
+              </div>
             </div>
-            <!--End container-->
-         </section>
-         <!--End contact section-->
-         
-      </div>
-      <!-- End wrapper-->
-      <!--Javascript-->	
-      <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
-      <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-      <script src="js/smooth-scroll.js" type="text/javascript"></script>
-	  <script src="js/jquery.validate.min.js" type="text/javascript"></script>
-	  <script src="js/placeholders.min.js" type="text/javascript"></script>
-      <script src="js/script.js" type="text/javascript"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvg7XYjl68d--79SpMhxxPli_1c3syWSc&callback=initializeMap"></script>
-      <!-- Google analytics -->
-      <!-- End google analytics -->
-   </body>
+          </div>
+
+          <footer class="footer">
+            <p>© 2026 Intimista Gourmet</p>
+            <p>Belo Horizonte, Minas Gerais</p>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/site.js" defer></script>
+  </body>
 </html>
-
