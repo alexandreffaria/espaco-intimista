@@ -1,5 +1,9 @@
 .DS_Store
 Thumbs.db
+node_modules/
+
+# o site montado — sai do build, nunca do editor
+dist/
 
 # working files, não vão para o site
 ref docs/

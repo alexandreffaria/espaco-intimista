@@ -1,0 +1,19 @@
+/* Motion — the hero entrance (.rise + .d1…d5) and the scroll reveal,
+   driven by scripts/reveal.js. */
+
+/* page-load orchestration */
+.rise { opacity: 0; transform: translateY(22px); animation: rise .95s var(--ease) forwards; }
+@keyframes rise { to { opacity: 1; transform: none; } }
+.d1 { animation-delay: .15s; }
+.d2 { animation-delay: .32s; }
+.d3 { animation-delay: .49s; }
+.d4 { animation-delay: .66s; }
+.d5 { animation-delay: .83s; }
+
+/* ---------- reveal on scroll ---------- */
+.reveal {
+  opacity: 0; transform: translateY(26px);
+  transition: opacity .95s var(--ease), transform .95s var(--ease);
+  transition-delay: var(--d, 0s);
+}
+.reveal.is-in { opacity: 1; transform: none; }

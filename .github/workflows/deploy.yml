@@ -15,6 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Montar o site
+        run: node build.mjs
+
       - name: Publicar via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -23,6 +26,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           port: 21
+          local-dir: ./dist/
           server-dir: ./
           exclude: |
             **/.git*
@@ -31,7 +35,3 @@ jobs:
             **/Thumbs.db
             .htaccess
             .well-known/**
-            img/**
-            ref docs/**
-            revamp images/**
-            README.md

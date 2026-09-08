@@ -1,0 +1,7 @@
+/* O espaço — the two manifesto columns. */
+
+.manifesto__cols {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  margin-top: clamp(2.25rem, 5vw, 3.5rem);
+}

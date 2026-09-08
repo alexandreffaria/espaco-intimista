@@ -1,0 +1,35 @@
+/* Type — eyebrow, headings (.h-xl/.h-lg/.h-md), lead and prose.
+   Light bands (.band--sage) restate the ink colours. */
+
+.eyebrow {
+  font-family: var(--dado);
+  font-size: .7rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--brasa);
+  margin-bottom: 1.4rem;
+}
+.band--sage .eyebrow { color: var(--corten); }
+
+.h-xl, .h-lg, .h-md {
+  font-family: var(--display);
+  font-variation-settings: 'SOFT' 30, 'WONK' 1, 'opsz' 144;
+  font-weight: 300;
+  letter-spacing: -.028em;
+  text-wrap: balance;
+}
+.h-xl { font-size: clamp(2.9rem, 8.4vw, 6.6rem); line-height: .96; }
+.h-lg { font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.03; }
+.h-md { font-size: clamp(1.45rem, 2.6vw, 2.05rem); line-height: 1.15; letter-spacing: -.02em; }
+
+.lead {
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--luz-fraca);
+  max-width: 46ch;
+}
+.band--sage .lead { color: var(--tinta-fraca); }
+
+.prose p { max-width: 54ch; color: var(--luz-fraca); }
+.prose p + p { margin-top: 1.2rem; }
+.band--sage .prose p { color: var(--tinta-fraca); }

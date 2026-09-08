@@ -1,0 +1,32 @@
+/* Tokens — palette drawn from the space itself: corten panel + gold
+   backlight, sage entrance walls, garden green, bougainvillea. */
+
+@font-face {
+  font-family: 'Amsterdam';
+  src: url('../font/AmsterdamVariation_3.ttf') format('truetype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+:root {
+  --noite:  #171110;
+  --casca:  #241a16;
+  --corten: #8a4a2a;
+  --brasa:  #f0b569;
+  --sombra: #e3e5de;
+  --mata:   #2c3b31;
+  --flor:   #ce1a55;
+
+  --luz:         #efe9e2;
+  --luz-fraca:   rgba(239, 233, 226, .62);
+  --luz-tenue:   rgba(239, 233, 226, .16);
+  --tinta-fraca: rgba(44, 59, 49, .70);
+  --tinta-tenue: rgba(44, 59, 49, .18);
+
+  --display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --corpo:   'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --dado:    'DM Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --band-y: clamp(5rem, 11vw, 9.5rem);
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}

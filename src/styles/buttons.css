@@ -1,0 +1,19 @@
+/* Buttons — .but--primary (flor) and .but--ghost (outline). */
+
+.but {
+  display: inline-flex; align-items: center; gap: .7rem;
+  padding: 1.05rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--dado); font-size: .78rem;
+  letter-spacing: .16em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer;
+  transition: background .4s var(--ease), color .4s var(--ease),
+              border-color .4s var(--ease), transform .4s var(--ease);
+}
+.but--primary { background: var(--flor); color: #fff; }
+.but--primary:hover { background: var(--brasa); color: var(--noite); transform: translateY(-2px); }
+.but--ghost { border-color: var(--luz-tenue); color: var(--luz); }
+.but--ghost:hover { border-color: var(--brasa); color: var(--brasa); }
+.band--sage .but--ghost { border-color: var(--tinta-tenue); color: var(--mata); }
+.band--sage .but--ghost:hover { border-color: var(--corten); color: var(--corten); }

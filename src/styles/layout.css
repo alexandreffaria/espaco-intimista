@@ -1,0 +1,12 @@
+/* Layout — the widths (.wrap) and the bands (.band) the page stacks into. */
+
+.wrap { width: min(1240px, 100% - var(--gutter) * 2); margin-inline: auto; }
+.wrap--narrow { width: min(860px, 100% - var(--gutter) * 2); margin-inline: auto; }
+
+.band { padding-block: var(--band-y); position: relative; }
+.band--sage { background: var(--sombra); color: var(--mata); }
+.band--dark { background: var(--noite); color: var(--luz); }
+.band--casca { background: var(--casca); color: var(--luz); }
+
+/* anchor targets clear the fixed header */
+section[id], div[id] { scroll-margin-top: 86px; }

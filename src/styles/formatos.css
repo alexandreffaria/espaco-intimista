@@ -1,0 +1,24 @@
+/* Formatos — the vivências list: name left, note right. */
+
+.viv { margin-top: clamp(2.5rem, 6vw, 4rem); border-top: 1px solid var(--tinta-tenue); }
+.viv li { border-bottom: 1px solid var(--tinta-tenue); }
+.viv__row {
+  display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.45fr);
+  gap: .5rem 2rem; align-items: baseline;
+  padding-block: clamp(1.4rem, 3vw, 2.2rem);
+}
+.viv__name {
+  font-family: var(--display);
+  font-variation-settings: 'SOFT' 30, 'WONK' 1, 'opsz' 100;
+  font-weight: 300;
+  font-size: clamp(1.8rem, 4.2vw, 3.1rem);
+  line-height: 1; letter-spacing: -.025em;
+}
+.viv__note { color: var(--tinta-fraca); }
+.viv__more {
+  font-family: var(--display); font-style: italic;
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
+  color: var(--corten); margin-top: 2rem;
+}
+
+@media (max-width: 720px) { .viv__row { grid-template-columns: 1fr; } }

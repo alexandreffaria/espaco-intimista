@@ -1,0 +1,34 @@
+/* Reserva — the two invitations and the what-to-write aside. */
+
+.convite {
+  display: flex; flex-wrap: wrap; gap: .9rem;
+  margin-top: clamp(2.5rem, 6vw, 3.5rem);
+}
+@media (max-width: 560px) {
+  .convite { flex-direction: column; align-items: stretch; }
+  .convite .but { justify-content: center; }
+}
+
+.convite__aside {
+  margin-top: clamp(2.5rem, 6vw, 3.5rem);
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--tinta-tenue);
+}
+.convite__label {
+  font-family: var(--dado); font-size: .68rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--corten); margin-bottom: 1.1rem;
+}
+.convite__lista { display: flex; flex-wrap: wrap; gap: .5rem 2.25rem; }
+.convite__lista li {
+  font-family: var(--dado); font-size: .74rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--tinta-fraca);
+}
+.convite__lista li::before { content: '— '; color: var(--corten); }
+.convite__nota { margin-top: 1.6rem; color: var(--tinta-fraca); font-size: .95rem; }
+.convite__nota a {
+  color: var(--corten); text-decoration: none;
+  border-bottom: 1px solid var(--tinta-tenue);
+  transition: border-color .3s var(--ease);
+}
+.convite__nota a:hover { border-bottom-color: var(--corten); }

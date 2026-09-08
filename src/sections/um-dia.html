@@ -1,0 +1,24 @@
+<!-- Scene changes live in scripts/um-dia.js; the colour of each hour in styles/um-dia.css. -->
+<section class="band band--dark arc" id="dia" data-scene="0">
+  <div class="arc__aura" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <p class="eyebrow reveal">Um dia aqui</p>
+    <h2 class="h-lg reveal" style="--d: 0.08s">
+      O sol atravessa o dia com o seu grupo.
+    </h2>
+    <p class="lead reveal" style="--d: 0.16s; margin-top: 1.5rem">
+      Mova o sol pelas horas — ou deixe o dia correr sozinho.
+    </p>
+
+    <div class="arc__stage reveal" style="--d: 0.24s">
+      <!-- include: sections/um-dia-cenas.html -->
+    </div>
+
+    <!-- include: sections/um-dia-sol.html -->
+
+    <div class="arc__hours" role="tablist" aria-label="Horas do dia">
+      <!-- include: sections/um-dia-horas.html -->
+    </div>
+  </div>
+</section>

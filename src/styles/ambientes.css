@@ -1,0 +1,31 @@
+/* Ambientes — the alternating shots and each room's spec list. */
+
+.rooms { display: grid; gap: clamp(4rem, 9vw, 8rem); margin-top: clamp(3rem, 7vw, 5.5rem); }
+.room {
+  display: grid; grid-template-columns: 1.25fr .75fr;
+  gap: clamp(1.75rem, 4vw, 3.5rem); align-items: center;
+}
+.room:nth-child(even) .room__shot { order: 2; }
+.room__shot { overflow: hidden; border-radius: 2px; background: var(--casca); }
+.room__shot img {
+  width: 100%; height: clamp(260px, 42vw, 520px); object-fit: cover;
+  transition: transform 1.2s var(--ease);
+}
+.room:hover .room__shot img { transform: scale(1.04); }
+/* Portrait shot: hold the crop on the bougainvillea, not the paving. */
+.room__shot img.crop-high { object-position: 50% 40%; }
+.room__name { margin-bottom: .45rem; }
+.room__note { color: var(--luz-fraca); max-width: 38ch; margin-bottom: 1.8rem; }
+.room__specs { border-top: 1px solid var(--luz-tenue); }
+.room__specs li {
+  display: flex; justify-content: space-between; gap: 1rem;
+  padding: .68rem 0; border-bottom: 1px solid var(--luz-tenue);
+  font-family: var(--dado); font-size: .74rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--luz-fraca);
+}
+.room__specs b { font-weight: 400; color: var(--brasa); }
+
+@media (max-width: 880px) {
+  .room { grid-template-columns: 1fr; }
+  .room:nth-child(even) .room__shot { order: 0; }
+}

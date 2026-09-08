@@ -1,0 +1,10 @@
+{
+  "name": "espaco-intimista",
+  "private": true,
+  "type": "module",
+  "description": "Site do Intimista — arquivos estáticos montados por build.mjs.",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch --serve"
+  }
+}

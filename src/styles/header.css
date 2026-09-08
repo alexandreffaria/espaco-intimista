@@ -1,0 +1,60 @@
+/* Fixed header, nav, and the drawer it becomes on small screens. */
+
+.header {
+  position: fixed; inset: 0 0 auto; z-index: 60;
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+  padding: 1.15rem var(--gutter);
+  border-bottom: 1px solid transparent;
+  transition: background .5s var(--ease), backdrop-filter .5s var(--ease),
+              padding .5s var(--ease), border-color .5s var(--ease);
+}
+.header.is-stuck {
+  background: rgba(23, 17, 16, .86);
+  backdrop-filter: blur(14px) saturate(140%);
+  border-bottom-color: rgba(239, 233, 226, .10);
+  padding-block: .85rem;
+}
+
+.brand { display: flex; align-items: center; text-decoration: none; color: var(--luz); }
+.brand__word {
+  font-family: 'Amsterdam', var(--display);
+  font-size: 1.9rem; line-height: 1; padding-bottom: .18em;
+}
+
+.nav { display: flex; align-items: center; gap: 2rem; }
+.nav__link {
+  font-family: var(--dado); font-size: .74rem;
+  letter-spacing: .15em; text-transform: uppercase;
+  text-decoration: none; color: var(--luz-fraca);
+  transition: color .3s var(--ease);
+}
+.nav__link:hover { color: var(--brasa); }
+.nav .but { padding: .72rem 1.4rem; font-size: .7rem; }
+
+.burger {
+  display: none; width: 44px; height: 44px; padding: 0;
+  background: none; border: 1px solid var(--luz-tenue); border-radius: 999px;
+  cursor: pointer; place-items: center;
+}
+.burger span {
+  display: block; width: 16px; height: 1px; background: var(--luz);
+  margin: 3px auto; transition: transform .35s var(--ease), opacity .25s;
+}
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(4px) rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-4px) rotate(-45deg); }
+
+@media (max-width: 940px) {
+  .burger { display: grid; }
+  .nav {
+    position: fixed; inset: 0 0 0 auto; width: min(320px, 84vw);
+    flex-direction: column; align-items: flex-start; justify-content: center; gap: 1.7rem;
+    padding: var(--gutter);
+    background: var(--casca);
+    border-left: 1px solid rgba(239, 233, 226, .10);
+    transform: translateX(100%);
+    transition: transform .5s var(--ease);
+  }
+  .nav.is-open { transform: none; }
+  .nav__link { font-size: .95rem; letter-spacing: .12em; color: var(--luz); }
+}

@@ -1,0 +1,28 @@
+/* ============================================================
+   Intimista — 2026
+
+   This file is the running order, not the styles. Each import
+   below is a small file in src/styles/; build.mjs inlines them
+   into css/site.css in exactly this order, so the list reads
+   as the cascade: tokens, base, shared pieces, then one file
+   per section from the top of the page to the bottom.
+   ============================================================ */
+
+@import 'tokens.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'typography.css';
+@import 'buttons.css';
+@import 'motion.css';
+
+@import 'header.css';
+@import 'hero.css';
+@import 'reveal-shot.css';
+@import 'espaco.css';
+@import 'ambientes.css';
+@import 'formatos.css';
+@import 'um-dia.css';
+@import 'passeio.css';
+@import 'reserva.css';
+@import 'contato.css';
+@import 'footer.css';

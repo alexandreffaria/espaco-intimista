@@ -1,0 +1,8 @@
+/* The shot that opens the door between the hero and the manifesto. */
+
+.reveal-shot { position: relative; height: clamp(300px, 62vh, 640px); overflow: hidden; background: var(--noite); }
+.reveal-shot img { width: 100%; height: 100%; object-fit: cover; }
+.reveal-shot::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(23, 17, 16, .58), transparent 28%, transparent 74%, rgba(227, 229, 222, .92));
+}
