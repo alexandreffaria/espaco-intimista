@@ -5,12 +5,26 @@
 
     <div class="contact" style="margin-top: clamp(2.5rem, 6vw, 4rem)">
       <div class="map reveal">
-        <iframe
-          title="Mapa: Av. Eng. Carlos Goulart, 931 — Belo Horizonte, MG"
-          src="https://maps.google.com/maps?q=-19.970194,-43.960914&amp;z=16&amp;output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="map__canvas">
+          <iframe
+            title="Mapa: Av. Eng. Carlos Goulart, 931 — Belo Horizonte, MG"
+            src="https://maps.google.com/maps?q=-19.970194,-43.960914&amp;z=16&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- o pino do embed fica cinza sob o filtro; este, por cima e fora
+             dele, é o nosso — dourado, na cor da marca -->
+        <svg class="map__pin" viewBox="0 0 32 44" aria-hidden="true">
+          <path
+            d="M16 42.5S3.5 26 3.5 16a12.5 12.5 0 1 1 25 0c0 10-12.5 26.5-12.5 26.5z"
+            fill="var(--brasa)"
+            stroke="var(--noite)"
+            stroke-width="1.6"
+          />
+          <circle cx="16" cy="16" r="5" fill="var(--noite)" />
+        </svg>
       </div>
 
       <div class="reveal" style="--d: 0.1s">
